@@ -75,5 +75,37 @@ form {
   nav {
     float: none;
     display: block;}
-  
+
+  nav img {
+    display: none;
+  }
+}
+
+@media (max-width: 630px) {
+  main {
+    width: 100%;
+    display: block;
+    margin: 0px;
+  }
+
+  nav {
+    padding: 0%;
+  }
+
+  nav a{
+    font-size: small;
+    padding: 0%;
+  }
+
+  nav ul{
+    padding: 0%;
+    margin: 8px;
+  }
+
+  button.cart {
+    margin-left: 20px;
+    padding: 5px 20px;
+    font-size: small;
+    
+  }
 }
