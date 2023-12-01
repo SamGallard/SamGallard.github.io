@@ -1,0 +1,79 @@
+h2 {
+  font-size: 1.5rem;
+}
+
+form {
+  max-width: 70%;
+  padding: 10px;
+  margin: 20px;
+}
+
+span { font-size: small;}
+  
+input[type="text"], select, textarea, input[type="email"], label {
+  display: block;
+  padding: 10px 0px;
+  margin: 8px 0px;
+  border: 1px solid rgb(58, 58, 58);
+  width: 100%;
+}
+  
+label {
+  border: none;
+  font-size: 1.2rem;
+  color: black;
+  }
+  
+input[type=submit], input[type=reset] {
+  width: 100%;
+  background: #db6c64;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+  
+input[type=submit]:hover, input[type=reset]:hover {
+  background: #6d3333;
+}
+  
+main {
+  display: grid;
+  padding: 2%;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "action operation"
+    "action address"
+    "form address"
+}
+
+section:nth-of-type(1) {
+  grid-area: operation;
+  background-color: antiquewhite;
+  padding-left: 30px;
+}
+
+address {
+  grid-area: address;
+  padding: 20px 0px;
+  font-size: larger;
+}
+  
+section:nth-of-type(3) {
+  grid-area: action;
+}
+  
+form {
+  grid-area: form;
+}
+  
+/*Responsive*/
+@media (max-width: 880px) {
+  nav {
+    float: none;
+    display: block;}
+  
+}
