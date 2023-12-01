@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,300&family=Ribeye&family=Ribeye+Marrow&display=swap');
+/*font-family: 'Hind', sans-serif;
+font-family: 'Montserrat', sans-serif; 
+
+Color Palette:
+#f75974 Pink
+#c933eb Purple
+#c2f1f7 Table Blue
+azure 
+*/
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: black;
+    background-image: url(images/soundboard.jpg);
+    background-size: cover;
+    text-align: center;
+    color: azure;
+    padding: 2%;
+}
+
+h1, h2, h3, th {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2, h3 {
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px dotted #c933eb;
+}
+section {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Layout */
+main {
+    display: grid;
+    padding: 2%;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "overview about"
+        "edm about"
+        "kpop about"
+        "rock about"
+        "table table";
+}
+
+section:nth-of-type(1) {
+    grid-area: about;
+    background-color: #d5faf5;
+}
+
+section:nth-of-type(2) {
+    grid-area: overview;
+}
+  
+section:nth-of-type(3) {
+    grid-area: edm;
+}
+  
+section:nth-of-type(4) {
+    grid-area: kpop;
+}
+  
+section:nth-of-type(5) {
+    grid-area: rock;
+}
+
+section:nth-of-type(6) {
+    grid-area: table;
+}
+
+/*Table*/
+p, table, footer {
+    font-family: 'Hind', sans-serif;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background-color: #f75974;
+    color:azure;
+} 
+
+tr:nth-of-type(even) {
+    background: #d5faf5;
+}
+
+th,td {
+    padding: 6px;
+    border: 1px solid #f75974;
+}
+
+footer {
+    color: azure;
+    font-style: italic;
+    background: black;
+    padding: 1px 20px;
+}
+
+/*Responsive*/
+@media (max-width: 810px) {
+    h1 {
+        background: rgba(0, 0, 0, 50%);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    main {
+        width: 100%;
+        display: block;
+    }
+    
+    section:nth-of-type(1) {
+        height: 300px;
+    }
+
+    img {
+        width: 200px;
+        float: left;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    section:nth-of-type(1) {
+        height: fit-content;
+    }
+    img {
+        width: 100%;
+        float:none;
+        padding-right: 0px;
+        padding: 0% 20%;
+    }
+}
+
