@@ -1,0 +1,43 @@
+
+.flex-products {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+div.titlecard {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 30px;
+}
+
+
+p span {
+    font-weight: bold;
+}
+
+div.product {
+    background-image: linear-gradient(hsl(42deg 100% 93.58%), hsl(353deg 100% 96.31%));
+    /*W3 Schools Gradient*/
+    border-radius: 15px;
+    margin: 2% 1%;
+    padding: 50px 5px;
+    font-size: 1.3rem;
+}
+
+div.product p, h3{
+    padding-left: 20px;
+    font-size:large;
+}
+
+h3 { font-size: larger;}
+span {font-weight: bold;}
+
+div.product img {
+    height: auto;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
