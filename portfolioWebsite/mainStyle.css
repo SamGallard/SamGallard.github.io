@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;900&family=Montserrat&display=swap');
+/*font-family: 'Epilogue', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+h1, nav, h2, h3 {
+    font-family: 'Epilogue', sans-serif;
+}
+
+p, form, li, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #0f0e17;
+}
+
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+    display:flex;
+}
+
+nav a {
+    color: azure;
+    text-decoration: none;
+    padding: 10px 40px;
+    border: 2px solid azure;
+    border-radius: 40px;
+}   
+
+nav li {margin: 10px;}
+
+
+nav ul li a:hover {
+    background:linear-gradient(to bottom right, rgb(255, 37, 95) , rgb(70, 0, 234));
+}
+
+
+h1, h2, p, h3, li {
+    color: azure;
+}
+
+header {
+    background:  #0f0e17;
+    background-image: url(_images/heroBanner.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: azure;
+    padding: 15px;
+
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+h2 {
+    font-size: 2rem;;
+}
+
+p{
+    margin-bottom: 30px;
+}
+body {
+    background: linear-gradient(rgb(40 0 138), rgb(77 13 53));
+}
+
+main {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "intro resume"
+}
+
+
+section :nth-of-type(1) {
+    grid-area: intro;
+}
+
+section :nth-of-type(2) {
+    grid-area: resume;
+}
+
+
+.resButton {
+    background-color: palevioletred;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.resumeDownload {
+    color: azure;
+    text-decoration: none;
+}
+
+section {
+    padding: 30px;
+}
+
+
+footer {
+    background: #0f0e17;
+    padding: 20px;
+    padding-left: 40px;
+}
+
