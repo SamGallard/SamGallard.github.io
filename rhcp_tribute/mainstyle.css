@@ -1,0 +1,95 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Molengo&family=Rubik+Doodle+Shadow&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF7F0;
+    margin: 0px 100px;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    border-radius: 25px;
+    max-width: 80%;
+}
+
+h1, .startop, .starbottom {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-size: 5em;
+    color: #ff3b3b;
+}
+
+header p, h2 {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 2em;
+}
+
+section:first-of-type {
+    background-color: #ffead8;
+    padding: 25px;
+    border-radius: 5px;
+    /*Credit to W3 Schools*/
+    margin-bottom: 20px;
+}
+
+a {
+    font-weight: bold;
+}
+
+p, a, ul {
+    font-family: "Molengo", sans-serif;
+    font-size: larger;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+}
+
+li:nth-child(odd) {
+    text-align: right;
+    border-right: 5px solid #ff3b3b;
+    padding: 15px;
+    padding-right: 30px;
+    margin-right: 50%;
+}
+
+li:nth-child(even) {
+    border-left: 5px solid #FFC43B;
+    padding: 15px;
+    padding-left: 30px;
+    margin-left: 49.57%;
+    /*I'm not sure why 49.57% lets them align instead of 50%*/
+}
+
+p.startop, p.starbottom {
+    font-weight: bold;
+    text-align: center;
+    margin: 0%;
+}
+
+.startop {
+    transform: translateY(50px);
+}
+
+.starbottom {
+    transform: translateY(-15px);
+}
+
+
+footer {
+    color: #F9E8D9;
+    font-style: italic;
+    background-color: #CE5A67;
+    padding: 2px 0px 2px 25px;
+    margin: 0px;
+    /*Credit to W3 Schools: Shorthand Property*/
+}
