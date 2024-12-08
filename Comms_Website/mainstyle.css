@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lexend:wght@100..900&display=swap');
+/* font-family: "Lexend", sans-serif;*/
+/*font-family: "Bangers", serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #171718;
+    color: white;
+    padding: 40px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    z-index: 2;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/redline\ couple.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Adjust opacity here (0.0 to 1.0) */
+    z-index: 1; /* Place it behind text */
+  }
+
+header span {
+    font-size: 2em;
+}
+
+blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+h1 {
+    font-family: "Bangers", system-ui;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+header p, label, h2, footer, blockquote, p, nav a, select#type, select#style, input, textarea {
+    font-family: "Lexend", sans-serif;
+}
+
+/*NAVIGATION*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #171718;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    display: flex;
+    cursor: pointer;
+}
+
+nav li {
+    position: relative;
+    display: block;  
+    float: left;
+    margin-right: 1.7em;
+    cursor: pointer;
+    background: #EEE;
+    text-align: center;
+    line-height: 2.44em;
+}
+
+nav ul li a {transition: all 0.7s;}
+
+nav li::before {
+    content: '';
+    position: absolute;
+    display: block; 
+    left: -1.5em;
+    border-top: 2.5em solid transparent;
+    border-right: 1.563em solid #eeeeee;
+}
+  
+nav li::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;  
+    right: -1.5em;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid #EEE;
+    border-right: 1.563em solid transparent;
+}
+  
+/* Hover */
+nav li:hover { 
+    background: #db9122;
+    transition: all 0.2s;
+}
+
+nav a:hover {  color: #171718;}
+
+nav li:hover::after {  
+    border-top: 2.5em solid #db9122;
+    border-right: 1.563em solid transparent;
+    transition: all 0.2s;
+}
+
+nav li:hover::before {  
+    border-top: 2.5em solid transparent;
+    border-right: 1.563em solid  #db9122;
+    transition: all 0.2s;
+}
+
+  
+/* Active */
+nav li:active {  
+    color: #000000;
+}
+
+nav li:active::after {  
+    border-top: 2.5em solid  #db9122;
+    border-right: 1.563em solid transparent;
+}
+
+nav li:active::before {  
+    border-top: 2.5em solid transparent;
+    border-right: 1.563em solid  #db9122;
+}
+
+nav li.active {
+    background: #bb2323;
+}
+
+nav ul li a.active {
+    color: #EEE;
+    background: #bb2323;
+    position: relative;
+    display: block;
+    float: left;
+    cursor: pointer;
+    padding-bottom: 1px;
+}
+
+nav ul li a.active::before {  
+    content: '';
+    position: absolute;
+    display: block; 
+    left: -1.5em;
+    border-top: 2.5em solid transparent;
+    border-right: 1.563em solid #bb2323;
+}
+
+nav ul li a.active::after {  
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;  
+    right: -1.5em;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid #bb2323;
+    border-right: 1.563em solid transparent;
+    z-index: 2;
+}
+
+nav img {
+    width: 70px;
+    border-radius: 50px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+nav i {
+    font-size: 35px;
+    margin-left: auto;
+}
+
+/*MAIN*/
+main {
+    margin: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #6c63ff;
+    text-align: center;
+}
+
+.artwork-options img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #6c63ff;
+    border-radius: 5px;
+}
+
+.options {
+    /*font-size: 1.5em;*/
+    background-color: #f0c39f;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+select {
+    padding: 10px;
+    border: #171718;
+}
+
+/*FORM*/
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+form label {
+    font-weight:500;
+}
+
+input {
+    border: none;
+    padding: 10px; 
+}
+
+form textarea {
+    border: none;
+    resize: vertical;
+    height: 100px;
+    padding: 10px;
+}
+
+input, select, textarea {
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5148d4;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #171718;
+    color: white;
+}
+
+/*Additional Editing CLASSES and ID*/
+#preview-image {
+    width: 600px;
+    height: auto;
+    border: 2ps solid black;
+    border-radius: 10px;
+}
+
+#preview-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#preview-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+#additional-info {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #666;
+}
+
+.checkbox-label {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox {
+    appearance: none;
+    background-color: #EEE;
+    border: 2px solid #65657b;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 200ms, border-color 200ms;
+}
+
+.checkbox:checked {
+    background-color: rgb(0, 20, 32);
+    border-color: #ffde24;
+}
+
+.checkbox:checked::before {
+    content: '✔';
+    color: #eee;
+    font-size: 14px;
+    position: relative;
+    top: -10px;
+    left: -5px;
+    padding: none;
+}
